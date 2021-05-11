@@ -26,7 +26,7 @@
         <!-- Core Versions -->
         <massiveJavaVersion>1.8</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
-        <massiveMavenVersion>3.6.0</massiveMavenVersion>
+        <massiveMavenVersion>3.3.0</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
         <massiveMavenEnforcerPluginVersion>3.0.0-M2</massiveMavenEnforcerPluginVersion>
@@ -362,8 +362,8 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/dynmap.274/
-                Intall: mvn install:install-file -DgroupId=us.dynmap -DartifactId=dynmap -Dversion=3.1-beta5 -Dpackaging=jar -Dfile=Dynmap-3.1-beta5-spigot.jar
-                Test: mvn dependency:get -Dartifact=us.dynmap:dynmap:3.1-beta5
+                Intall: mvn install:install-file -DgroupId=us.dynmap -DartifactId=dynmap -Dversion=3.1 -Dpackaging=jar -Dfile=Dynmap-3.1-Spigot.jar
+                Test: mvn dependency:get -Dartifact=us.dynmap:dynmap:3.1
             -->
             <dependency>
               <groupId>us.dynmap</groupId>
@@ -374,8 +374,8 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
-                File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=131362
-                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=2.1.1 -Dpackaging=jar -Dfile=EntityLWC.jar
+                File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=284327
+                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=2.1.5 -Dpackaging=jar -Dfile=Modern-LWC-2.1.5.jar
                 Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:2.1.1
             -->
             <dependency>
@@ -387,8 +387,8 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/venturechat.771/
-                Intall: mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.20.2 -Dpackaging=jar -Dfile=VentureChat2.22.2.jar
-                Test: mvn dependency:get -Dartifact=mineverse.Aust1n46.chat:MineverseChat:2.20.2
+                Intall: mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.22.8 -Dpackaging=jar -Dfile=VentureChat-2.22.8.jar
+                Test: mvn dependency:get -Dartifact=mineverse.Aust1n46.chat:MineverseChat:2.22.8
             -->
             <dependency>
                 <groupId>mineverse.Aust1n46.chat</groupId>
