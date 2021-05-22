@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.3.2</version>
+    <version>3.3.3</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -71,10 +71,13 @@
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
 
         <!-- https://github.com/kangarko/ChatControl-Pro/wiki/Developer-API -->
-        <massiveMineverseChatVersion>2.20.2</massiveMineverseChatVersion>
+        <massiveMineverseChatVersion>2.22.8</massiveMineverseChatVersion>
 
+        <!-- https://github.com/aromaa/WorldGuardExtraFlagsPlugin -->
+        <massiveWorldGuardExtraFlagsVersion>4.1.5</massiveWorldGuardExtraFlagsVersion>
+	
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>3.1-beta5</massiveDynmapVersion>
+        <massiveDynmapVersion>3.1</massiveDynmapVersion>
 
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
@@ -395,7 +398,19 @@
                 <artifactId>MineverseChat</artifactId>
                 <version>${massiveMineverseChatVersion}</version>
                 <scope>provided</scope>
-            </dependency><!-- https://github.com/kangarko/ChatControl-Pro/wiki/Developer-API -->
+            </dependency>
+
+            <!--
+                Page: https://www.spigotmc.org/resources/worldguard-extra-flags.4823/
+                Intall: mvn install:install-file -DgroupId=net.goldtreeservers -DartifactId=worldguardextraflags -Dversion=4.1.5 -Dpackaging=jar -Dfile=WorldGuardExtraFlags-4.1.5.jar
+                Test: mvn dependency:get -Dartifact=net.goldtreeservers:worldguardextraflags:4.1.5
+            -->
+            <dependency>
+                <groupId>net.goldtreeservers</groupId>
+                <artifactId>worldguardextraflags</artifactId>
+                <version>${massiveWorldGuardExtraFlagsVersion}</version>
+                <scope>provided</scope>
+            </dependency>
 
             <!-- NMS - Full Spigot servers including NMS that may not be distributed. -->
             <!-- This section is relevant to supporting multiple minecraft versions for plugins using NMS. -->
