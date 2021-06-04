@@ -93,7 +93,7 @@
         <massiveLwcVersion>2.1.1</massiveLwcVersion>
 
         <!-- https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI -->
-        <massivePlaceholderAPIVersion>2.10.4</massivePlaceholderAPIVersion>
+        <massivePlaceholderAPIVersion>2.10.9</massivePlaceholderAPIVersion>
     </properties>
 
     <!-- Repositories -->
